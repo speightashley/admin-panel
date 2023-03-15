@@ -28,12 +28,108 @@
       </ul>
     </section>
     <main class="main">
-      <div class="card"><h3 class="title">Next Fixture</h3></div>
-      <div class="card"><h3 class="title">Last Result</h3></div>
-      <div class="card"><h3 class="title">Revenue</h3></div>
-      <div class="card"><h3 class="title">Revenue Analytics</h3></div>
+      <div class="card">
+        <table class="next">
+          <caption>
+            Next Fixture
+
+            <img
+              src="images/Wycombe_Wanderers_FC_logo.svg.png"
+              alt=""
+              class="logo"
+            />
+          </caption>
+        </table>
+      </div>
       <div class="card">
         <table>
+          <caption>
+            Last Result
+          </caption>
+        </table>
+      </div>
+      <div class="card">
+        <table>
+          <caption>
+            Promotion Odds
+          </caption>
+        </table>
+      </div>
+      <div class="card">
+        <table>
+          <caption>
+            Top Scorers
+          </caption>
+          <tr>
+            <th class="num">#</th>
+            <th class="text">Name</th>
+            <th class="num">Goals</th>
+            <th class="num">Assists</th>
+          </tr>
+          <tr>
+            <td class="num">1</td>
+            <td class="text">Devante Cole</td>
+            <td class="num">11</td>
+            <td class="num">1</td>
+          </tr>
+          <tr>
+            <td class="num">2</td>
+            <td class="text">Adam Phillips</td>
+            <td class="num">9</td>
+            <td class="num">6</td>
+          </tr>
+          <tr>
+            <td class="num">3</td>
+            <td class="text">James Norwood</td>
+            <td class="num">8</td>
+            <td class="num">4</td>
+          </tr>
+          <tr>
+            <td class="num">4</td>
+            <td class="text">Jordan Williams</td>
+            <td class="num">5</td>
+            <td class="num">6</td>
+          </tr>
+          <tr>
+            <td class="num">5</td>
+            <td class="text">Josh Benson</td>
+            <td class="num">5</td>
+            <td class="num">2</td>
+          </tr>
+          <tr>
+            <td class="num">6</td>
+            <td class="text">Nicky Cadden</td>
+            <td class="num">3</td>
+            <td class="num">3</td>
+          </tr>
+          <tr>
+            <td class="num">7</td>
+            <td class="text">Liam Kitching</td>
+            <td class="num">3</td>
+            <td class="num">3</td>
+          </tr>
+          <tr>
+            <td class="num">8</td>
+            <td class="text">Jack Aitchison</td>
+            <td class="num">3</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td class="num">9</td>
+            <td class="text">Herbie Kane</td>
+            <td class="num">2</td>
+            <td class="num">5</td>
+          </tr>
+          <tr>
+            <td class="num">10</td>
+            <td class="text">Luca Connell</td>
+            <td class="num">2</td>
+            <td class="num">5</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card">
+        <table id="league">
           <caption>
             League Table
           </caption>
@@ -48,7 +144,7 @@
             <th class="num">A</th>
             <th class="num">GD</th>
             <th class="num">Pts</th>
-            <th>Last 6</th>
+            <!-- <th>Last 6</th> -->
           </tr>
           <tr id="row">
             <td class="num">1</td>
@@ -61,7 +157,7 @@
             <td class="num">22</td>
             <td class="num">39</td>
             <td class="num">77</td>
-            <td>&#128994; &#128994; &#128994; &#128994; &#128994; &#128994;</td>
+            <!-- <td>&#128994; &#128994; &#128994; &#128994; &#128994; &#128994;</td> -->
           </tr>
           <tr>
             <td class="num">2</td>
@@ -74,7 +170,7 @@
             <td class="num">41</td>
             <td class="num">22</td>
             <td class="num">74</td>
-            <td></td>
+            <!-- <td></td> -->
           </tr>
           <tr>
             <td class="num">3</td>
@@ -87,7 +183,7 @@
             <td class="num">31</td>
             <td class="num">39</td>
             <td class="num">72</td>
-            <td>&#128308; &#9898; &#128308;</td>
+            <!-- <td>&#128308; &#9898; &#128308;</td> -->
           </tr>
           <tr class="selected">
             <td class="num">4</td>
@@ -100,7 +196,7 @@
             <td class="num">29</td>
             <td class="num">26</td>
             <td class="num">66</td>
-            <td></td>
+            <!-- <td></td> -->
           </tr>
           <tr>
             <td class="num">5</td>
@@ -113,7 +209,7 @@
             <td class="num">35</td>
             <td class="num">24</td>
             <td class="num">64</td>
-            <td></td>
+            <!-- <td></td> -->
           </tr>
           <tr>
             <td class="num">6</td>
@@ -126,55 +222,14 @@
             <td class="num">30</td>
             <td class="num">21</td>
             <td class="num">63</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <!-- <td></td> -->
           </tr>
         </table>
       </div>
-      <div class="card">c6</div>
-      <div class="card">c7</div>
       <div class="card">c8</div>
       <div class="card">c9</div>
       <div class="card">c10</div>
-      <div class="card"></div>
+      <!-- <div class="card">c11</div> -->
     </main>
     <footer class="footer">Footer</footer>
   </body>
