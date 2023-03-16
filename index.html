@@ -1,230 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js" defer></script>
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img
-          src="images/barnsley-fc-logo-png-transparent-1476723074.png"
-          alt=""
-        />
-      </div>
-      <div class="companyName">Barnsley FC</div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js" defer></script>
 
-    <section class="title"><h1 class="title">DASHBOARD</h1></section>
-    <section class="sidebar">
-      <h1>Menu</h1>
-      <ul>
-        <li><a href="">Dashboard</a></li>
-      </ul>
-    </section>
-    <main class="main">
-      <div class="card">
-        <table class="next">
-          <caption>
-            Next Fixture
-          </caption>
-        </table>
+  <link rel="stylesheet" href="style.css" />
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/barnsley-fc-logo-png-transparent-1476723074.png" alt="" />
+    </div>
+    <div class="companyName">
+      <h1>Barnsley FC</h1>
+    </div>
+  </header>
+
+  <section class="title">
+    <h1 class="title">DASHBOARD</h1>
+  </section>
+  <section class="sidebar">
+    <h1>Menu</h1>
+    <ul>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+          <path fill-rule="evenodd"
+            d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
+        </svg><a href="">Dashboard</a>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-table"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+        </svg><a href="">Table</a>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+          <path fill-rule="evenodd"
+            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+        </svg><a href="">Transfers</a>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2"
+          viewBox="0 0 16 16">
+          <path
+            d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+        </svg><a href="">Odds</a>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn"
+          viewBox="0 0 16 16">
+          <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+          <path
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+        </svg><a href="">Video</a>
+      </li>
+    </ul>
+  </section>
+  <main class="main">
+    <div class="card">
+      <table class="next">
+        <caption>
+          Next Fixture
+        </caption>
+      </table>
+      <div class="cardContent">
+        <img src="images/Wycombe_Wanderers_FC_logo.svg.png" alt="" class="logo" />
+        <h3>Vs</h3>
+        <img src="images/barnsley-fc-logo-png-transparent-1476723074.png" alt="" class="logo" />
       </div>
-      <div class="card">
-        <table>
-          <caption>
-            Last Result
-          </caption>
-        </table>
-      </div>
-      <div class="card">
-        <table>
-          <caption>
-            Promotion Odds
-          </caption>
-        </table>
-      </div>
-      <div class="card">
-        <table>
-          <caption>
-            Top Scorers
-          </caption>
-          <tr>
-            <th class="num">#</th>
-            <th class="text">Name</th>
-            <th class="num">Goals</th>
-            <th class="num">Assists</th>
-          </tr>
-          <tr>
-            <td class="num">1</td>
-            <td class="text">Devante Cole</td>
-            <td class="num">11</td>
-            <td class="num">1</td>
-          </tr>
-          <tr>
-            <td class="num">2</td>
-            <td class="text">Adam Phillips</td>
-            <td class="num">9</td>
-            <td class="num">6</td>
-          </tr>
-          <tr>
-            <td class="num">3</td>
-            <td class="text">James Norwood</td>
-            <td class="num">8</td>
-            <td class="num">4</td>
-          </tr>
-          <tr>
-            <td class="num">4</td>
-            <td class="text">Jordan Williams</td>
-            <td class="num">5</td>
-            <td class="num">6</td>
-          </tr>
-          <tr>
-            <td class="num">5</td>
-            <td class="text">Josh Benson</td>
-            <td class="num">5</td>
-            <td class="num">2</td>
-          </tr>
-          <tr>
-            <td class="num">6</td>
-            <td class="text">Nicky Cadden</td>
-            <td class="num">3</td>
-            <td class="num">3</td>
-          </tr>
-          <tr>
-            <td class="num">7</td>
-            <td class="text">Liam Kitching</td>
-            <td class="num">3</td>
-            <td class="num">3</td>
-          </tr>
-          <tr>
-            <td class="num">8</td>
-            <td class="text">Jack Aitchison</td>
-            <td class="num">3</td>
-            <td class="num">0</td>
-          </tr>
-          <tr>
-            <td class="num">9</td>
-            <td class="text">Herbie Kane</td>
-            <td class="num">2</td>
-            <td class="num">5</td>
-          </tr>
-          <tr>
-            <td class="num">10</td>
-            <td class="text">Luca Connell</td>
-            <td class="num">2</td>
-            <td class="num">5</td>
-          </tr>
-        </table>
-      </div>
-      <div class="card">
-        <table id="league">
-          <caption>
-            League Table
-          </caption>
-          <tr id="tableHeaders">
-            <th class="num">#</th>
-            <th>Team</th>
-            <th class="num">Pl</th>
-            <th class="num">W</th>
-            <th class="num">D</th>
-            <th class="num">L</th>
-            <th class="num">F</th>
-            <th class="num">A</th>
-            <th class="num">GD</th>
-            <th class="num">Pts</th>
-            <!-- <th>Last 6</th> -->
-          </tr>
-          <tr id="row">
-            <td class="num">1</td>
-            <td>Sheffield Wednesday</td>
-            <td class="num">34</td>
-            <td class="num">23</td>
-            <td class="num">8</td>
-            <td class="num">3</td>
-            <td class="num">61</td>
-            <td class="num">22</td>
-            <td class="num">39</td>
-            <td class="num">77</td>
-            <!-- <td>&#128994; &#128994; &#128994; &#128994; &#128994; &#128994;</td> -->
-          </tr>
-          <tr>
-            <td class="num">2</td>
-            <td>Plymouth Argyle</td>
-            <td class="num">36</td>
-            <td class="num">22</td>
-            <td class="num">8</td>
-            <td class="num">6</td>
-            <td class="num">63</td>
-            <td class="num">41</td>
-            <td class="num">22</td>
-            <td class="num">74</td>
-            <!-- <td></td> -->
-          </tr>
-          <tr>
-            <td class="num">3</td>
-            <td>Ipswich Town</td>
-            <td class="num">36</td>
-            <td class="num">20</td>
-            <td class="num">12</td>
-            <td class="num">4</td>
-            <td class="num">70</td>
-            <td class="num">31</td>
-            <td class="num">39</td>
-            <td class="num">72</td>
-            <!-- <td>&#128308; &#9898; &#128308;</td> -->
-          </tr>
-          <tr class="selected">
-            <td class="num">4</td>
-            <td>Barnsley</td>
-            <td class="num">34</td>
-            <td class="num">20</td>
-            <td class="num">6</td>
-            <td class="num">8</td>
-            <td class="num">55</td>
-            <td class="num">29</td>
-            <td class="num">26</td>
-            <td class="num">66</td>
-            <!-- <td></td> -->
-          </tr>
-          <tr>
-            <td class="num">5</td>
-            <td>Derby County</td>
-            <td class="num">36</td>
-            <td class="num">18</td>
-            <td class="num">10</td>
-            <td class="num">8</td>
-            <td class="num">59</td>
-            <td class="num">35</td>
-            <td class="num">24</td>
-            <td class="num">64</td>
-            <!-- <td></td> -->
-          </tr>
-          <tr>
-            <td class="num">6</td>
-            <td>Bolton Wanderers</td>
-            <td class="num">37</td>
-            <td class="num">18</td>
-            <td class="num">9</td>
-            <td class="num">10</td>
-            <td class="num">51</td>
-            <td class="num">30</td>
-            <td class="num">21</td>
-            <td class="num">63</td>
-            <!-- <td></td> -->
-          </tr>
-        </table>
-      </div>
-      <div class="card">c8</div>
-      <div class="card">c9</div>
-      <div class="card">c10</div>
-      <!-- <div class="card">c11</div> -->
-    </main>
-    <footer class="footer">Footer</footer>
-  </body>
+      <h4 class="matchDate">18th March 2023</h4>
+    </div>
+    <div class="card">
+      <table>
+        <caption>
+          Last Result
+        </caption>
+      </table>
+    </div>
+    <div class="card">
+      <table>
+        <caption>
+          Promotion Odds
+        </caption>
+      </table>
+    </div>
+    <div class="card">
+      <table>
+        <caption>
+          Top Scorers
+        </caption>
+        <tr>
+          <th class="num">#</th>
+          <th class="text">Name</th>
+          <th class="num">Goals</th>
+          <th class="num">Assists</th>
+        </tr>
+        <tr>
+          <td class="num">1</td>
+          <td class="text">Devante Cole</td>
+          <td class="num">11</td>
+          <td class="num">1</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="text">Adam Phillips</td>
+          <td class="num">9</td>
+          <td class="num">6</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="text">James Norwood</td>
+          <td class="num">8</td>
+          <td class="num">4</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="text">Jordan Williams</td>
+          <td class="num">5</td>
+          <td class="num">6</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="text">Josh Benson</td>
+          <td class="num">5</td>
+          <td class="num">2</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="text">Nicky Cadden</td>
+          <td class="num">3</td>
+          <td class="num">3</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="text">Liam Kitching</td>
+          <td class="num">3</td>
+          <td class="num">3</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="text">Jack Aitchison</td>
+          <td class="num">3</td>
+          <td class="num">0</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="text">Herbie Kane</td>
+          <td class="num">2</td>
+          <td class="num">5</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="text">Luca Connell</td>
+          <td class="num">2</td>
+          <td class="num">5</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card">
+      <table id="league">
+        <caption>
+          League Table
+        </caption>
+        <tr id="tableHeaders">
+          <th class="num">#</th>
+          <th>Team</th>
+          <th class="num">Pl</th>
+          <th class="num">W</th>
+          <th class="num">D</th>
+          <th class="num">L</th>
+          <th class="num">F</th>
+          <th class="num">A</th>
+          <th class="num">GD</th>
+          <th class="num">Pts</th>
+          <!-- <th>Last 6</th> -->
+        </tr>
+        <tr id="row">
+          <td class="num">1</td>
+          <td>Sheffield Wednesday</td>
+          <td class="num">34</td>
+          <td class="num">23</td>
+          <td class="num">8</td>
+          <td class="num">3</td>
+          <td class="num">61</td>
+          <td class="num">22</td>
+          <td class="num">39</td>
+          <td class="num">77</td>
+          <!-- <td>&#128994; &#128994; &#128994; &#128994; &#128994; &#128994;</td> -->
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td>Plymouth Argyle</td>
+          <td class="num">36</td>
+          <td class="num">22</td>
+          <td class="num">8</td>
+          <td class="num">6</td>
+          <td class="num">63</td>
+          <td class="num">41</td>
+          <td class="num">22</td>
+          <td class="num">74</td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td>Ipswich Town</td>
+          <td class="num">36</td>
+          <td class="num">20</td>
+          <td class="num">12</td>
+          <td class="num">4</td>
+          <td class="num">70</td>
+          <td class="num">31</td>
+          <td class="num">39</td>
+          <td class="num">72</td>
+          <!-- <td>&#128308; &#9898; &#128308;</td> -->
+        </tr>
+        <tr class="selected">
+          <td class="num">4</td>
+          <td>Barnsley</td>
+          <td class="num">34</td>
+          <td class="num">20</td>
+          <td class="num">6</td>
+          <td class="num">8</td>
+          <td class="num">55</td>
+          <td class="num">29</td>
+          <td class="num">26</td>
+          <td class="num">66</td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td>Derby County</td>
+          <td class="num">36</td>
+          <td class="num">18</td>
+          <td class="num">10</td>
+          <td class="num">8</td>
+          <td class="num">59</td>
+          <td class="num">35</td>
+          <td class="num">24</td>
+          <td class="num">64</td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td>Bolton Wanderers</td>
+          <td class="num">37</td>
+          <td class="num">18</td>
+          <td class="num">9</td>
+          <td class="num">10</td>
+          <td class="num">51</td>
+          <td class="num">30</td>
+          <td class="num">21</td>
+          <td class="num">63</td>
+          <!-- <td></td> -->
+        </tr>
+      </table>
+    </div>
+    <div class="card">c8</div>
+    <div class="card">c9</div>
+    <div class="card">c10</div>
+    <!-- <div class="card">c11</div> -->
+  </main>
+  <footer class="footer">Footer</footer>
+</body>
+
 </html>

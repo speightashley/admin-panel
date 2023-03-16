@@ -46,6 +46,10 @@ div.logo img {
   width: auto;
 }
 
+div.companyName {
+  margin: 15px;
+}
+
 h1 {
   color: var(--paragraph-color);
 }
@@ -60,7 +64,7 @@ section.title {
 }
 
 .sidebar {
-  /* background-color: #252b3b; */
+  background-color: var(--main-background-color);
   grid-column: 1/2;
   grid-row: 2/ 4;
   border: 1px solid var(--border-color);
@@ -103,27 +107,55 @@ section.title {
 
 ul {
   margin-top: 15px;
+  width: 100%;
 }
 
 ul li {
   display: block;
+  padding: 15px;
 }
 
 li a {
   text-decoration: none;
   color: var(--paragraph-color);
+  width: 100%;
+}
+
+li:hover,
+a:hover {
+  color: #000;
+  font-weight: 500;
+  transition: color 0.7s, font-weight 1.7s;
+}
+
+svg {
+  margin-right: 10px;
 }
 
 /* Internal Main elements*/
 
 .card {
-  background-color: #fff;
+  background-color: var(--card-color);
   border-radius: 10px;
   padding: 15px;
   border: 1px solid var(--border-color);
 
-  /* box-shadow: 0 1px 2px var(--paragraph-color); */
+  box-shadow: 0 1px 1px var(--paragraph-color);
 }
+
+div.cardContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.matchDate {
+  text-align: center;
+  padding: 10px;
+}
+
 .card:nth-child(1) {
   grid-area: c1;
 }
